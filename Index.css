@@ -1,0 +1,932 @@
+/* Base font family and reset */
+body {
+  background: linear-gradient(to left, #afeeee, #f2eeb2);
+  background-size: 400% 400%;
+  animation: moveGradient 6s ease infinite;
+    margin: 0;
+    
+    overflow-x: hidden !important;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace !important; /* Correct font family */}
+
+    .header {
+      position: fixed;
+      top: 0;
+      margin-top: 4px;
+      left: 50%;
+      display: flex;
+      transform: translateX(-50%);
+border-radius: 12px;
+
+backdrop-filter: blur(30px);
+      padding: 10px 10px;
+      z-index: 1000;
+      width: auto;
+  }
+  
+  .header a {
+      color: #888888;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+  }
+  
+  .header a:hover, .header a.active {
+      background-color: #555;
+      border-radius: 4px;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+  /* Add smooth scrolling */
+  html {
+      scroll-behavior: smooth;
+  }
+
+  
+@media (max-width: 768px) {
+  .header {
+    justify-content: flex-start; 
+    padding: 15px;  
+  }
+
+  .header a {
+    font-size: 14px; 
+    padding: 8px 15px;  
+    margin: 5px 0; 
+  }
+}
+
+@media (max-width: 536px) {
+  .header {
+    padding: 10px 30px !important;  /* Reduce padding on very small screens */
+  }
+
+  .header a {
+    font-size: 9px;  /* Further reduce font size */
+    padding: 6px 12px;  /* Further adjust padding */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .connect-button {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 3px 3px black;
+    cursor: pointer;
+  }
+
+  .connect-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+
+
+
+  .connect-button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px black;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  #toggle span,
+  #toggle span:after,
+  #toggle span:before {
+    width: 100%;
+    height: 5px;
+    background-color: #888;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+  }
+  
+  #toggle:hover span {
+    background-color: transparent;
+  }
+  
+  #toggle:hover span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  #toggle:hover span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+  
+  #toggle:hover + #menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Menu appearance */
+  #menu {
+    position: absolute;
+    color: #999;
+    width: 200px;
+    padding: 10px;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    text-align: center;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s;
+    top: 50px; /* Positioning the menu below the toggle button */
+    right: 10px;
+  }
+  
+  #menu:after {
+    position: absolute;
+    top: -15px;
+    left: 95px;
+    content: "";
+    display: block;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid white;
+  }
+  
+  ul, li, li a {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li a {
+    padding: 5px;
+    color: #888;
+    text-decoration: none;
+    transition: all .2s;
+  }
+  
+  li a:hover,
+  li a:focus {
+    background: #1ABC9C;
+    color: #fff;
+  }
+  
+  /* Styling for landing section */
+  .landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to left, #afeeee, #f2eeb2);
+    background-size: 400% 400%;
+    animation: moveGradient 6s ease infinite;
+  }
+  
+  @keyframes moveGradient {
+    0% { background-position: 0% 0%; }
+    25% { background-position: 100% 0%; }
+    50% { background-position: 100% 100%; }
+    75% { background-position: 0% 100%; }
+    100% { background-position: 0% 0%; }
+  }
+  
+  #cursor {
+    font-size: 2rem;
+    color: #000000;
+    display: inline-block;
+    width: 10px;
+    margin-left: 5px;
+  }
+  
+  #typed-text {
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    display: inline-block;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+  
+  .hs {
+    margin-top: 200px;
+    text-align: center;
+  }
+  
+
+
+    .full-height {
+      height: 100vh;
+    }
+
+  
+    .bg-dark {
+      background-color: #343a40;
+      color: white;
+    }
+
+    .center-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%; 
+    }
+
+
+/* button */
+/* button */
+/* button */
+
+
+
+
+
+
+
+.EcoConnect {
+  background-image: url(./assets/EcoConnectbg1.png);
+  position: relative;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.092);
+  padding: 15px;
+  margin-bottom: 30px;
+  overflow: hidden; 
+}
+
+.EcoConnect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0; 
+  transition: opacity 2s ease-in-out; 
+  z-index: -1;  
+}
+
+
+.EcoLogo p {
+  margin-top: 16px;
+  margin-left: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+  /* For tab */
+  .EcoConnect {
+    height: auto; 
+  }
+
+  .EcoConnect .Eco, 
+  .EcoConnect .EcoConnectMock {
+    padding: 15px; 
+  }
+
+  .EcoConnect .EcoLogo img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* mobile */
+@media (max-width: 576px) {
+  .EcoConnect {
+    height: auto; 
+    padding: 10px; 
+  }
+
+  .EcoConnect .Eco, 
+  .EcoConnect .EcoConnectMock {
+    padding: 10px; 
+  }
+  
+  .EcoConnect .EcoLogo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .EcoConnectMock video {
+    width: 100%; 
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row {
+  margin: 0;
+  padding: 0; 
+}
+
+
+
+.Eco p{
+  color: white;
+}
+
+
+.EcoLogo{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.EcoLogo img{
+  width: 40px;
+  height: auto;
+}
+
+.EcoLogo span{
+  color: #a6c853 !important;
+}
+
+.ecoConnect p {
+  color: #afeeee !important;
+}
+
+
+.EcoConnectMock{
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+
+.KinView{
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.092); 
+  position: relative; 
+  background: linear-gradient(to left, rgba(230, 240, 240, 0.5), rgba(240, 239, 230, 0.5));
+  border-radius: 10px; 
+  background-position: top !important;
+  background-image: url(./assets/Kinviewbg1.png);
+  background-position: center;
+  background-size: cover;
+
+}
+
+.KinViewMock{
+  display: flex;
+  justify-content: center;
+}
+
+.KinViewLogoName img {
+  height: 50px;
+  width: auto;
+}
+
+.KinViewLogoName {
+  display: flex;
+  align-items: center;
+}
+
+.KinViewLogoName p{
+  margin-top: 14px;
+margin-left: 20px;
+}
+
+.KinViewLogoName span {
+  color: #1eadff;
+}
+
+.KinViewLogo {
+  color: white;
+}
+
+
+
+
+.BikeRevive {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.092); 
+    position: relative; 
+    background: linear-gradient(to left, rgba(230, 240, 240, 0.5), rgba(240, 239, 230, 0.5));
+    border-radius: 10px; 
+    background-image: url(./assets/Bikerevivebg1.png);
+    background-position: center;
+    background-size: cover;
+    background-position: top;
+}
+
+.BikeReviveLogo img  {
+  height: 60px;
+  
+}
+
+.BikeReviveLogoName{
+  display: flex;
+}
+
+.Bikerevive {
+color: white;
+}
+
+.BikeReviveLogoName p{
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+.BikeReviveLogoName p {
+  color: white;
+}
+
+.BikeReviveLogoName span {
+  color: #FB5F58;
+}
+
+.BikeReviveContent p {
+  color: white;
+  
+}
+
+
+
+
+
+
+
+
+
+
+.ProzenPharmaceuticals{
+   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.092); 
+    position: relative; 
+    background: linear-gradient(to left, rgba(230, 240, 240, 0.5), rgba(240, 239, 230, 0.5));
+    border-radius: 10px; 
+    background-image: url(./assets);
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+.read {
+    display: inline-block;
+    background-color: #007bff; 
+    color: #fff;
+    font-size: 16px; 
+    border-radius: 5px; 
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer; 
+    box-shadow: 0 4px #0069d9; 
+    transition: all 0.3s ease; 
+    text-decoration: none; 
+}
+
+.read:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px #004085; 
+    transform: translateY(-2px); 
+}
+
+.read:active {
+    background-color: #004085; 
+    box-shadow: 0 2px #003366;
+    transform: translateY(2px); 
+}
+
+.read span {
+    font-weight: 400;
+    font-size: inherit;
+}
+
+@media (max-width: 768px) {
+    .read {
+        font-size: 14px; 
+        padding: 8px 16px; 
+    }
+}
+
+
+#pp {
+    width: 80px;
+    height: auto;
+}
+
+
+
+/* 
+.kproject {
+    display: flex;
+    margin: 30px;
+     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2); 
+height: 700px;
+width: auto;
+
+border-radius: 20px;
+    padding: 20px;
+    background-color: #e6f0f0;
+}
+
+
+.klogo {
+    display: flex;
+}
+
+.klogo img {
+
+    width: 60px;
+    height: auto;
+}
+
+.klogo p {
+    font-size: 30px;
+    margin-left:30px ;
+}
+
+.kcontent {
+    width: 50%;
+}
+
+
+.kvideo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.kvideo video {
+height: 300px;
+width: auto;
+}
+
+.project {
+    padding: 10px;
+    background-color: #f0efe6;
+}
+ */
+
+
+
+
+
+
+
+
+ .selfimg img {
+    width: 480px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 30px;
+ }
+
+
+ 
+
+/* .selfinfo {
+  height:550px ;
+  width: auto;
+} */
+
+
+
+.contact{
+  box-shadow: 0 0 15px 10px #00000021;
+  margin-bottom: 40px;
+}
+
+.mail1{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+#message:focus {
+  outline: none;
+  border: none;
+  
+}
+
+#message {
+  border: none;
+}
+
+
+
+
+.group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+  background-color: transparent !important;
+}
+
+#email {
+  background-color: transparent;
+}
+
+input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SocialConnect svg {
+  padding: 4px;
+  fill: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+  filter: brightness(1);
+}
+
+.SocialConnect svg:hover {
+  fill: rgba(0, 123, 255, 1);
+  filter: brightness(1.2); /* Slightly increase brightness for the glow effect */
+  box-shadow: 0 0 8px 3px rgba(0, 123, 255, 0.7); /* Glow effect in blue */
+}
+
+/* Specific color and glow effects for individual icons */
+
+/* GitHub Icon */
+.SocialConnect .bi-github:hover {
+  fill: rgb(172, 67, 136);
+  box-shadow: 0 0 10px 4px rgb(172, 67, 136); 
+}
+
+/* Behance Icon */
+.SocialConnect .bi-behance:hover {
+  fill: rgba(23, 105, 255, 1); 
+  box-shadow: 0 0 10px 4px rgba(23, 105, 255, 0.7); 
+}
+
+/* LinkedIn Icon */
+.SocialConnect .bi-linkedin:hover {
+  mix-blend-mode: color-burn;
+
+  fill: rgba(0, 119, 181, 1); 
+  box-shadow: 0 0 10px 4px rgba(0, 119, 181, 0.7); 
+}
+
+/* Email Icon */
+.SocialConnect .bi-envelope-fill:hover {
+  
+  fill: rgba(212, 70, 56, 1);
+  box-shadow: 0 0 10px 4px rgba(212, 70, 56, 0.7); 
+}
+
+
+
+
+.SocialConnect a{
+  text-decoration: none;
+}
+
+
+#designation {
+  background-image: linear-gradient(45deg, #ff6a00, #ffcc00);
+  -webkit-background-clip: text; 
+  color: transparent; 
+  display: inline-block;
+}
+
+
+
+
+
+
+
+/* CV Button Styling */
+.cv-button {
+  position: fixed;
+  bottom: 20px;    /* 20px margin from the bottom */
+  right: 20px;     /* 20px margin from the right */
+  width: 54px;     /* Fixed width of 54px */
+  height: 54px;    /* Fixed height of 54px */
+  font-size: 20px;  /* Adjust the font size to fit within the button */
+  font-weight: bold;
+  color: #ffffff;
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  border-radius: 50%; /* Rounded corners */
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure the button is on top of other content */
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.cv-button:hover,
+.cv-button:focus {
+  opacity: 1; /* Full opacity on hover */
+  box-shadow: 0 0 20px 2px rgba(255, 255, 255, 1); /* Glow effect */
+  transform: scale(1.1); /* Slight scale for effect */
+}
+
+/* Active (Click) Effect */
+.cv-button:active {
+  box-shadow: 0 0 30px 5px rgba(255, 255, 255, 1); /* Stronger glow when clicked */
+  transform: scale(1.2); /* Slightly more scale on click */
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 600px) {
+  .cv-button {
+    width: 45px;   /* Smaller width on smaller screens */
+    height: 45px;  /* Smaller height on smaller screens */
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cv-button {
+    width: 40px;   /* Even smaller width on very small screens */
+    height: 40px;  /* Even smaller height on very small screens */
+    font-size: 14px; /* Adjust font size for very small screens */
+  }
+}
