@@ -42,7 +42,7 @@
                 </div>
         
                 <br><br>
-                <a href="#about" class="connect-button">Connect with me</a>
+                <a href="#ContactMe" class="connect-button">Connect with me</a>
               </div>
       
             </div>
@@ -94,7 +94,7 @@
               EcoConnect is an innovative mobile application designed to promote environment sustainability living, facilitate various types of donations, support fundraisers, and connect volunteers through social media features. The app aims to create a community of environmentally conscious individuals and organizations working together to make a positive impact on society and the planet.
             </p>
             <br />
-            <p id="showImageBtn" class="read" style="font-weight: 400;"> <span> Read Case Study </span></p>
+            <p id="ecoCaseStudy" class="read" style="font-weight: 400;"> <span> Read Case Study </span></p>
           </div>
         
           <!-- Right Column with Video Mockup -->
@@ -187,7 +187,7 @@
   
   
                       <img src="./assets/BikeReviveLogo.png" alt="" srcset="">
-                      <p >BikeRevive <span>(Bike Service App)</span></p>
+                      <p >Bike Mania <span>(Bike Service App)</span></p>
                   </div>
                   
       
@@ -195,9 +195,9 @@
       
       
       
-              <p>The BikeRevive app is a mobile platform designed to make bike maintenance and repairs easier by giving you quick access to spare parts and retailers. If your bike breaks down on highways or in remote areas, the app lets you contact service providers for immediate help. It helps you find nearby shops, compare prices, and even arrange for deliveries or pick-ups.  It’s designed to save you time and effort, ensuring your bike stays in great condition whenever you need it.</p>
+              <p>The Bike Mania app is a mobile platform designed to make bike maintenance and repairs easier by giving you quick access to spare parts and retailers. If your bike breaks down on highways or in remote areas, the app lets you contact service providers for immediate help. It helps you find nearby shops, compare prices, and even arrange for deliveries or pick-ups.  It’s designed to save you time and effort, ensuring your bike stays in great condition whenever you need it.</p>
   <br>
-              <p class="read" style="font-weight: 400;"> <span> Read Case Study </span></p>
+              <p id="BikeManiaLink" class="read" style="font-weight: 400;"> <span> Read Case Study </span></p>
       
           </div>
       
@@ -270,7 +270,7 @@
       
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nostrum numquam quibusdam voluptas, nemo, in illo ratione dignissimos nam officia odio rerum dicta voluptatum blanditiis laborum totam unde exercitationem eveniet.lo Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, nesciunt! Maiores ratione quaerat soluta aliquam officiis tempora reiciendis fugit unde perspiciatis vero? Aut recusandae quod nostrum nobis quo perferendis ea.</p>
   
-              <p class="text-center border">Read Case Study</p>
+              <p class="text-center border">Visit link</p>
       
           </div>
       
@@ -454,7 +454,7 @@
 <br>
 <br>
 
-<section class=" container p-5 contact">
+<section id="ContactMe" class=" container p-5 contact">
 
     
         <div class="container row  content11">
@@ -509,12 +509,12 @@
             <div class="mail1">
 
 
-              <form id="contactForm" onsubmit="sendMail(event)">
+              <form id="contactForm"  action="https://formspree.io/f/xpwzglzn" method="POST">
              <br>
              <br>
                 
                 <div class="group">
-                  <input id="email" type="email" required>
+                  <input id="email" type="text" required>
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label for="email">Enter Your Email</label>
@@ -549,40 +549,6 @@
 
 
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script type="text/javascript">
-  (function(){
-    emailjs.init("_RjtRiuiZhiPgH5qpIWPc");  // Ensure this is your correct public key
-  })();
-
-  function sendMail(event) {
-    event.preventDefault();  // Prevent the default form submission
-
-    var params = {
-      user_name: document.getElementById("name").value,
-      user_email: document.getElementById("email").value,
-      user_message: document.getElementById("message").value,
-    };
-
-    const serviceID = "service_s291d5s";  // Ensure this is the correct Service ID
-    const templateID = "template_oqm9v5u";  // Ensure this is the correct Template ID
-
-    emailjs.send(serviceID, templateID, params)
-      .then((res) => {
-        document.getElementById("name").value = ""; 
-        document.getElementById("email").value = "";
-        document.getElementById("message").value = "";
-        
-        console.log(res);
-        alert("Your message was sent successfully!");
-      })
-      .catch((err) => {
-        console.log(err);
-        alert("Oops! Something went wrong, please try again.");
-      });
-  }
-</script>
-
 
 
 
@@ -599,12 +565,33 @@
 <script>
 
 document.getElementById('readCaseStudy').addEventListener('click', function() {
-    // Show alert
     alert('!!ALT LINK (You are about to be redirected to Behance Link)');
     
-    // Redirect after the user clicks OK on the alert
     window.location.href = 'https://www.behance.net/gallery/211490391/Kinview-App';
   });
+  
+document.getElementById('ecoCaseStudy').addEventListener('click', function() {
+    alert('!!ALT LINK (You are about to be redirected to Behance Link)');
+    
+    window.location.href = 'https://www.behance.net/gallery/209670835/Eco-Connect';
+  });
+
+
+document.getElementById('BikeManiaLink').addEventListener('click', function() {
+    alert('!!ALT LINK (You are about to be redirected to Behance Link)');
+    
+    window.location.href = 'https://www.behance.net/gallery/213899877/Bike-Mania';
+  });
+
+
+
+
+  
+  </script>
+
+
+
+
 
 
 </script>

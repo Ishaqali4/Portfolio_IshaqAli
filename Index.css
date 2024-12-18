@@ -791,6 +791,7 @@ width: auto;
 
 input 				{
   font-size:18px;
+  width: 250px;
   padding:10px 10px 10px 5px;
   display:block;
   border:none;
@@ -877,7 +878,9 @@ input:focus ~ .highlight {
 }
 
 
-
+textarea {
+  width: 250px;
+}
 
 
 
@@ -899,11 +902,10 @@ input:focus ~ .highlight {
 
 .SocialConnect svg:hover {
   fill: rgba(0, 123, 255, 1);
-  filter: brightness(1.2); /* Slightly increase brightness for the glow effect */
-  box-shadow: 0 0 8px 3px rgba(0, 123, 255, 0.7); /* Glow effect in blue */
+  filter: brightness(1.2);
+  box-shadow: 0 0 8px 3px rgba(0, 123, 255, 0.7);
 }
 
-/* Specific color and glow effects for individual icons */
 
 /* GitHub Icon */
 .SocialConnect .bi-github:hover {
@@ -962,11 +964,11 @@ input:focus ~ .highlight {
   height: 54px;   
   font-size: 20px; 
   font-weight: bold;
-  color: #ffffff;
-  background-color: transparent;
-  border: 3px solid #ffffff;
+  color: #4d437d;
+  background-color: #ddddfa;
+  border: 3px solid #dde4fa;
   border-radius: 50%;
-  opacity: 0.8;
+  /* opacity: 0.9; */
   display: flex;
   justify-content: center;
   align-items: center;

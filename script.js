@@ -5,20 +5,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Static text before "Designer", "Developer", or "Programmer"
     const staticText = "I'm a ";
-    const words = ["UI UX Designer", "Web Developer" ];  // Array of words to alternate
-    let currentWordIndex = 0;  // Keeps track of which word (Designer, Developer, etc.) to type
-    let charIndex = 0;         // Keeps track of which character of the word is being typed
-    const typingSpeed = 100;   // Typing speed (milliseconds)
-    const erasingSpeed = 50;   // Erasing speed (milliseconds)
-    const blinkSpeed = 500;    // Cursor blink speed (milliseconds)
+    const words = ["UI UX Designer", "Web Developer" ];  
+    let currentWordIndex = 0; 
+    let charIndex = 0;        
+    const typingSpeed = 100;  
+    const erasingSpeed = 50;  
+    const blinkSpeed = 500; 
 
-    let isErasing = false;     // Flag to indicate whether we're in the erasing phase
-    let typingComplete = false; // Flag to track if typing of the word is complete
+    let isErasing = false;  
+    let typingComplete = false; 
 
-    // Function to type and erase words
     function typeText() {
-        const word = words[currentWordIndex];      // Get the current word (e.g., "Designer", "Developer")
-        const fullText = staticText + word;         // Full sentence: "I'm a Designer" or "I'm a Developer"
+        const word = words[currentWordIndex];     
+        const fullText = staticText + word;        
 
         if (!isErasing) {
             // Typing phase
