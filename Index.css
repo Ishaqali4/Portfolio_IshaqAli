@@ -41,7 +41,9 @@ backdrop-filter: blur(30px);
   
 
 
-
+.nav-link {
+  white-space: nowrap !important ;
+}
 
 
 
@@ -50,50 +52,43 @@ backdrop-filter: blur(30px);
 
 
   
-  /* Add smooth scrolling */
   html {
       scroll-behavior: smooth;
   }
 
+  @media (max-width: 768px) {
+    .header {
+      justify-content: center; /* Ensure content is centered */
+      padding: 15px;
+    }
+    .header a {
+      font-size: 14px;
+      padding: 8px 15px;
+      margin: 5px 0;
+    }
+  }
   
-  /* Tablet (max-width: 768px) */
-@media (max-width: 768px) {
-  .header {
-    justify-content: flex-start; 
-    padding: 15px;  /* Adjust padding */
+  /* Responsive styles for screens smaller than 536px */
+  @media (max-width: 536px) {
+    .header {
+      padding: 10px 30px !important; /* Reduce padding */
+    }
+    .header a {
+      font-size: 9px;
+      padding: 6px 12px;
+    }
   }
-
-  .header a {
-    font-size: 14px;  /* Adjust font size */
-    padding: 8px 15px;  /* Adjust padding */
-    margin: 5px 0;  /* Adjust margin */
+  
+  /* Responsive styles for screens smaller than 320px */
+  @media (max-width: 320px) {
+    .header {
+      padding: 8px 15px;
+    }
+    .header a {
+      font-size: 8px;
+      padding: 5px 10px;
+    }
   }
-}
-
-/* Small Devices (max-width: 536px) */
-@media (max-width: 536px) {
-  .header {
-    padding: 10px 30px !important;  /* Reduce padding */
-  }
-
-  .header a {
-    font-size: 9px;  /* Further reduce font size */
-    padding: 6px 12px;  /* Further adjust padding */
-  }
-}
-
-/* Extra Small Devices (max-width: 320px) */
-@media (max-width: 320px) {
-  .header {
-    padding: 8px 15px;  /* Smaller padding for very small screens */
-  }
-
-  .header a {
-    font-size: 8px;  /* Decrease font size even further */
-    padding: 5px 10px;  /* Further adjust padding */
-  }
-}
-
 
 
 
@@ -191,7 +186,7 @@ backdrop-filter: blur(30px);
     opacity: 0;
     visibility: hidden;
     transition: opacity .4s;
-    top: 50px; /* Positioning the menu below the toggle button */
+    top: 50px; 
     right: 10px;
   }
   
@@ -254,7 +249,7 @@ backdrop-filter: blur(30px);
   }
   
   #typed-text {
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: normal;
     font-family: 'Courier New', Courier, monospace;
     color: #333;
@@ -961,51 +956,50 @@ input:focus ~ .highlight {
 /* CV Button Styling */
 .cv-button {
   position: fixed;
-  bottom: 20px;    /* 20px margin from the bottom */
-  right: 20px;     /* 20px margin from the right */
-  width: 54px;     /* Fixed width of 54px */
-  height: 54px;    /* Fixed height of 54px */
-  font-size: 20px;  /* Adjust the font size to fit within the button */
+  bottom: 20px;   
+  right: 20px;    
+  width: 54px;  
+  height: 54px;   
+  font-size: 20px; 
   font-weight: bold;
   color: #ffffff;
   background-color: transparent;
   border: 3px solid #ffffff;
-  border-radius: 50%; /* Rounded corners */
-  opacity: 0.6;
+  border-radius: 50%;
+  opacity: 0.8;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Ensure the button is on top of other content */
+  z-index: 9999;
   transition: all 0.3s ease;
 }
 
 /* Hover Effect */
 .cv-button:hover,
 .cv-button:focus {
-  opacity: 1; /* Full opacity on hover */
-  box-shadow: 0 0 20px 2px rgba(255, 255, 255, 1); /* Glow effect */
-  transform: scale(1.1); /* Slight scale for effect */
+  opacity: 1; 
+  box-shadow: 0 0 20px 2px rgba(255, 255, 255, 1); 
+  transform: scale(1.1);
 }
 
-/* Active (Click) Effect */
 .cv-button:active {
-  box-shadow: 0 0 30px 5px rgba(255, 255, 255, 1); /* Stronger glow when clicked */
-  transform: scale(1.2); /* Slightly more scale on click */
+  box-shadow: 0 0 30px 5px rgba(255, 255, 255, 1); 
+  transform: scale(1.2);
 }
 
 /* Responsive Styling */
 @media screen and (max-width: 600px) {
   .cv-button {
-    width: 45px;   /* Smaller width on smaller screens */
-    height: 45px;  /* Smaller height on smaller screens */
-    font-size: 16px; /* Adjust font size for smaller screens */
+    width: 45px;  
+    height: 45px;  
+    font-size: 16px; 
   }
 }
 
 @media screen and (max-width: 400px) {
   .cv-button {
-    width: 40px;   /* Even smaller width on very small screens */
-    height: 40px;  /* Even smaller height on very small screens */
-    font-size: 14px; /* Adjust font size for very small screens */
+    width: 40px; 
+    height: 40px;  
+    font-size: 14px; 
   }
 }
