@@ -56,22 +56,24 @@ backdrop-filter: blur(30px);
   }
 
   
+  /* Tablet (max-width: 768px) */
 @media (max-width: 768px) {
   .header {
     justify-content: flex-start; 
-    padding: 15px;  
+    padding: 15px;  /* Adjust padding */
   }
 
   .header a {
-    font-size: 14px; 
-    padding: 8px 15px;  
-    margin: 5px 0; 
+    font-size: 14px;  /* Adjust font size */
+    padding: 8px 15px;  /* Adjust padding */
+    margin: 5px 0;  /* Adjust margin */
   }
 }
 
+/* Small Devices (max-width: 536px) */
 @media (max-width: 536px) {
   .header {
-    padding: 10px 30px !important;  /* Reduce padding on very small screens */
+    padding: 10px 30px !important;  /* Reduce padding */
   }
 
   .header a {
@@ -80,9 +82,17 @@ backdrop-filter: blur(30px);
   }
 }
 
+/* Extra Small Devices (max-width: 320px) */
+@media (max-width: 320px) {
+  .header {
+    padding: 8px 15px;  /* Smaller padding for very small screens */
+  }
 
-
-
+  .header a {
+    font-size: 8px;  /* Decrease font size even further */
+    padding: 5px 10px;  /* Further adjust padding */
+  }
+}
 
 
 
@@ -331,15 +341,15 @@ backdrop-filter: blur(30px);
 
 
 
+/* Tablet (max-width: 992px) */
 @media (max-width: 992px) {
-  /* For tab */
   .EcoConnect {
-    height: auto; 
+    height: auto;
   }
 
   .EcoConnect .Eco, 
   .EcoConnect .EcoConnectMock {
-    padding: 15px; 
+    padding: 15px;
   }
 
   .EcoConnect .EcoLogo img {
@@ -348,28 +358,98 @@ backdrop-filter: blur(30px);
   }
 }
 
-/* mobile */
+/* Mobile (max-width: 576px) */
 @media (max-width: 576px) {
   .EcoConnect {
-    height: auto; 
-    padding: 10px; 
+    height: auto;
+    padding: 10px;
   }
 
   .EcoConnect .Eco, 
   .EcoConnect .EcoConnectMock {
-    padding: 10px; 
+    padding: 10px;
   }
-  
+
   .EcoConnect .EcoLogo img {
     max-width: 100%;
     height: auto;
   }
 
   .EcoConnectMock video {
-    width: 100%; 
+    width: 100%;
     height: auto;
   }
 }
+
+/* Extra Small Devices (max-width: 320px) */
+@media (max-width: 320px) {
+  .EcoConnect {
+    padding: 8px; /* Further reduce padding for very small screens */
+  }
+
+  .EcoConnect .Eco, 
+  .EcoConnect .EcoConnectMock {
+    padding: 8px; /* Adjust padding for small screens */
+  }
+
+  .EcoConnect .EcoLogo img {
+    max-width: 90%; /* Slightly reduce the logo size */
+    height: auto;
+  }
+
+  .EcoConnectMock video {
+    width: 100%; /* Ensure the video fits well */
+    height: auto;
+  }
+}
+
+/* Mobile Medium (max-width: 375px) */
+@media (max-width: 375px) {
+  .EcoConnect {
+    padding: 9px; /* Adjust padding slightly */
+  }
+
+  .EcoConnect .Eco, 
+  .EcoConnect .EcoConnectMock {
+    padding: 9px;
+  }
+
+  .EcoConnect .EcoLogo img {
+    max-width: 95%; /* Slightly smaller logo for this width */
+    height: auto;
+  }
+
+  .EcoConnectMock video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Mobile Large (max-width: 425px) */
+@media (max-width: 425px) {
+  .EcoConnect {
+    padding: 10px; /* Adjust padding for larger small screens */
+  }
+
+  .EcoConnect .Eco, 
+  .EcoConnect .EcoConnectMock {
+    padding: 10px;
+  }
+
+  .EcoConnect .EcoLogo img {
+    max-width: 100%; /* Keep the logo full width for slightly larger screens */
+    height: auto;
+  }
+
+  .EcoConnectMock video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
 
 
 
@@ -655,14 +735,14 @@ width: auto;
 
 
 
-
+/* 
  .selfimg img {
     width: 480px;
     height: auto;
     object-fit: cover;
     border-radius: 30px;
  }
-
+ */
 
  
 
@@ -718,7 +798,6 @@ input 				{
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
-  width:300px;
   border:none;
   border-bottom:1px solid #757575;
 }
