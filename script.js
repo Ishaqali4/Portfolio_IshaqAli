@@ -144,6 +144,36 @@ theToggle.onclick = function() {
 
 
 
+// Function to wrap each letter in a span element
+var spanText = function(text) {
+    var string = text.innerText;
+    var spaned = '';
+    for (var i = 0; i < string.length; i++) {
+      if (string.substring(i, i + 1) === ' ') spaned += string.substring(i, i + 1);
+      else spaned += '<span>' + string.substring(i, i + 1) + '</span>';
+    }
+    text.innerHTML = spaned;
+  };
+  
+  // Apply the spanText function to the h1 with the specific ID
+  var headline = document.getElementById("animatedHeading");
+  spanText(headline);
+  
+  // Add delay to each letter's animation based on index
+  let animations = document.querySelectorAll('#animatedHeading');
+  
+  animations.forEach(animation => {
+    let letters = animation.querySelectorAll('span');
+    letters.forEach((letter, i) => {
+      letter.style.animationDelay = (i * 0.1) + 's';
+    });
+  });
+  
+  // Trigger animation when the page loads
+  window.addEventListener('load', () => {
+    document.querySelector('.nameContainer').classList.add('animateOnLoad');
+  });
+  
 
 
 

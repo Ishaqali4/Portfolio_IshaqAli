@@ -46,11 +46,6 @@ backdrop-filter: blur(30px);
 }
 
 
-
-
-
-
-
   
   html {
       scroll-behavior: smooth;
@@ -101,7 +96,38 @@ backdrop-filter: blur(30px);
 
 
 
+/* Initial styling */
 
+
+/* Targeting the specific h1 with the id 'animatedHeading' */
+#animatedHeading span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(200px);
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* Animation on hover */
+.nameContainer:hover #animatedHeading span {
+  animation: slideLeft 1.5s forwards;
+}
+
+/* Class to trigger animation on page load */
+.animateOnLoad #animatedHeading span {
+  animation: slideLeft 1.5s forwards;
+}
+
+/* Keyframe for sliding effect */
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
 
 
 
@@ -943,12 +969,57 @@ textarea {
 
 
 #designation {
-  background-image: linear-gradient(45deg, #ff6a00, #ffcc00);
+  background-image: linear-gradient(45deg, #ff6a00, #856a00);
   -webkit-background-clip: text; 
   color: transparent; 
   display: inline-block;
 }
 
+
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: center !important;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
 
 
 
@@ -960,12 +1031,12 @@ textarea {
   position: fixed;
   bottom: 20px;   
   right: 20px;    
-  width: 54px;  
-  height: 54px;   
+  width: 64px;  
+  height: 64px;   
   font-size: 20px; 
   font-weight: bold;
   color: #4d437d;
-  background-color: #ddddfa;
+  background-color: #cdcdfa;
   border: 3px solid #dde4fa;
   border-radius: 50%;
   /* opacity: 0.9; */
@@ -992,16 +1063,18 @@ textarea {
 /* Responsive Styling */
 @media screen and (max-width: 600px) {
   .cv-button {
-    width: 45px;  
-    height: 45px;  
+    width: 54px;  
+    height: 54px;  
     font-size: 16px; 
   }
 }
 
 @media screen and (max-width: 400px) {
   .cv-button {
-    width: 40px; 
-    height: 40px;  
+    width: 54px; 
+    height: 54px;  
     font-size: 14px; 
   }
 }
+
+
