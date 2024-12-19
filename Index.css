@@ -320,6 +320,7 @@ backdrop-filter: blur(30px);
 
 
 .EcoConnect {
+  height: 400px;
   background-image: url(./assets/EcoConnectbg1.png);
   position: relative;
   background-size: cover;
@@ -328,6 +329,60 @@ backdrop-filter: blur(30px);
   padding: 15px;
   margin-bottom: 30px;
   overflow: hidden; 
+}
+
+
+/* Mobile view (up to 480px) */
+
+
+@media (max-width: 370px) {
+  .EcoConnect {
+    height: 1500px; /* Adjust the height for smaller mobile devices like 370px width */
+  }
+}
+
+/* Mobile Small view (371px to 480px) */
+@media (min-width: 371px) and (max-width: 480px) {
+  .EcoConnect {
+    height: 1500px; /* Adjust the height for small mobile devices */
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .EcoConnect {
+    height: 1000px; /* Adjust the height for small mobile devices */
+    overflow: hidden;
+  }
+}
+
+/* Small Mobile view (481px to 600px) */
+@media (min-width: 481px) and (max-width: 600px) {
+  .EcoConnect {
+    height: 1000px; /* Adjust the height for slightly larger mobile screens */
+  }
+}
+
+/* Medium Mobile or Tablet view (601px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .EcoConnect {
+    height: 804px; /* Default height for medium-sized mobile/tablet screens */
+  }
+}
+
+/* Large Tablet or Small Desktop view (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .EcoConnect {
+    height: 450px; /* Increase height for larger tablets or small desktops */
+  }
+}
+
+/* Large Desktop view (1025px and up) */
+@media (min-width: 1025px) {
+  .EcoConnect {
+    height: 450px !important; /* Adjust height for large desktop screens */
+  }
 }
 
 .EcoConnect::before {
@@ -364,9 +419,6 @@ backdrop-filter: blur(30px);
 
 /* Tablet (max-width: 992px) */
 @media (max-width: 992px) {
-  .EcoConnect {
-    height: auto;
-  }
 
   .EcoConnect .Eco, 
   .EcoConnect .EcoConnectMock {
@@ -382,7 +434,6 @@ backdrop-filter: blur(30px);
 /* Mobile (max-width: 576px) */
 @media (max-width: 576px) {
   .EcoConnect {
-    height: auto;
     padding: 10px;
   }
 
@@ -522,9 +573,11 @@ backdrop-filter: blur(30px);
 
 .EcoConnectMock{
   display: flex;
+  align-items: center;
   justify-content: center;
-
 }
+
+
 
 
 
@@ -578,6 +631,7 @@ margin-left: 20px;
 
 
 .BikeRevive {
+  
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.092); 
     position: relative; 
     overflow: hidden;
