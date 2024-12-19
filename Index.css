@@ -320,7 +320,8 @@ backdrop-filter: blur(30px);
 
 
 .EcoConnect {
-  height: 400px;
+
+  
   background-image: url(./assets/EcoConnectbg1.png);
   position: relative;
   background-size: cover;
@@ -601,6 +602,8 @@ height: 440px;
 .EcoConnectMock{
   display: flex;
   align-items: center;
+  margin: 20px 0px;
+  margin-top: 20px !important;
   justify-content: center;
 }
 
@@ -665,17 +668,31 @@ margin-left: 20px;
 
 
 .BikeRevive {
-  
+  height: auto;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.092); 
     position: relative; 
     overflow: hidden;
     border-radius: 10px; 
-    background-image: url(./assets/Bikerevivebg1.png);
+    background-image: url(./assets/image\ 85.png);
     background-position: center;
     background-size: cover;
     background-position: top;
 }
 
+.BikeManiaMock {
+  width:  auto;
+}
+
+.BikeManiaMock video {
+    width: 220px !important;
+  display: flex;
+  opacity: 0.6;
+  margin-top: 45px;
+  margin-left: 180px;
+  justify-content: center !important;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
 
 .KinViewMock video {
   margin-top: 90px !important;
@@ -1175,7 +1192,7 @@ textarea {
 
 
 .KinViewMock  video {
-  height: 400px;
+width: 220px;
   margin-top: 20px;
 
 }
