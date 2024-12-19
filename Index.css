@@ -374,7 +374,7 @@ backdrop-filter: blur(30px);
 /* Large Tablet or Small Desktop view (769px to 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .EcoConnect {
-    height: 430px; /* Increase height for larger tablets or small desktops */
+    height: 810px; /* Increase height for larger tablets or small desktops */
   }
 }
 
