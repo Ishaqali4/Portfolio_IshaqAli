@@ -358,9 +358,19 @@ backdrop-filter: blur(30px);
 }
 
 /* Small Mobile view (481px to 600px) */
+@media (min-width: 400px) and (max-width: 452px) {
+  .EcoConnect {
+    height: 944px; /* Adjust the height for slightly larger mobile screens */
+  }
+}
+@media (min-width: 453px) and (max-width: 480px) {
+  .EcoConnect {
+    height: 944px; /* Adjust the height for slightly larger mobile screens */
+  }
+}
 @media (min-width: 481px) and (max-width: 558px) {
   .EcoConnect {
-    height: 881px; /* Adjust the height for slightly larger mobile screens */
+    height: 896px; /* Adjust the height for slightly larger mobile screens */
   }
 }
 @media (min-width: 559px) and (max-width: 650px) {
