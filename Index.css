@@ -358,19 +358,19 @@ backdrop-filter: blur(30px);
 }
 
 /* Small Mobile view (481px to 600px) */
-@media (min-width: 481px) and (max-width: 560px) {
+@media (min-width: 481px) and (max-width: 558px) {
   .EcoConnect {
-    height: 870px; /* Adjust the height for slightly larger mobile screens */
+    height: 881px; /* Adjust the height for slightly larger mobile screens */
   }
 }
-@media (min-width: 581px) and (max-width: 680px) {
+@media (min-width: 559px) and (max-width: 650px) {
   .EcoConnect {
-    height: 850px; /* Adjust the height for slightly larger mobile screens */
+    height: 855px  ; /* Adjust the height for slightly larger mobile screens */
   }
 }
 
 /* Medium Mobile or Tablet view (601px to 768px) */
-@media (min-width: 681px) and (max-width: 768px) {
+@media (min-width: 651px) and (max-width: 768px) {
   .EcoConnect {
     margin: 0 !important;
     height: 820px; /* Default height for medium-sized mobile/tablet screens */
