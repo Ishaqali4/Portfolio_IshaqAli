@@ -367,21 +367,21 @@ backdrop-filter: blur(30px);
 /* Medium Mobile or Tablet view (601px to 768px) */
 @media (min-width: 601px) and (max-width: 768px) {
   .EcoConnect {
-    height: 804px; /* Default height for medium-sized mobile/tablet screens */
+    height: 800px; /* Default height for medium-sized mobile/tablet screens */
   }
 }
 
 /* Large Tablet or Small Desktop view (769px to 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .EcoConnect {
-    height: 450px; /* Increase height for larger tablets or small desktops */
+    height: 430px; /* Increase height for larger tablets or small desktops */
   }
 }
 
 /* Large Desktop view (1025px and up) */
 @media (min-width: 1025px) {
   .EcoConnect {
-    height: 450px !important; /* Adjust height for large desktop screens */
+    height: 400px !important; /* Adjust height for large desktop screens */
   }
 }
 
