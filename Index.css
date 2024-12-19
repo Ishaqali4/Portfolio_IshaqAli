@@ -352,7 +352,7 @@ backdrop-filter: blur(30px);
 
 @media (max-width: 480px) {
   .EcoConnect {
-    height: 1050px; /* Adjust the height for small mobile devices */
+    height: 940px; /* Adjust the height for small mobile devices */
     overflow: hidden;
   }
 }
@@ -360,14 +360,14 @@ backdrop-filter: blur(30px);
 /* Small Mobile view (481px to 600px) */
 @media (min-width: 481px) and (max-width: 600px) {
   .EcoConnect {
-    height: 850px; /* Adjust the height for slightly larger mobile screens */
+    height: 870px; /* Adjust the height for slightly larger mobile screens */
   }
 }
 
 /* Medium Mobile or Tablet view (601px to 768px) */
 @media (min-width: 601px) and (max-width: 768px) {
   .EcoConnect {
-    height: 800px; /* Default height for medium-sized mobile/tablet screens */
+    height: 82co0px; /* Default height for medium-sized mobile/tablet screens */
   }
 }
 
