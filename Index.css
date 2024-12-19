@@ -1078,3 +1078,52 @@ textarea {
 }
 
 
+
+
+
+
+.KinViewMock  video {
+  height: 400px;
+  margin-top: 20px;
+
+}
+
+
+
+
+
+/* Ensure the carousel images fill the container */
+.carousel-item img {
+  object-fit: cover; /* Ensures the image covers the container */
+  height: 380px;
+  margin-top: 30px; /* Set height for the images */
+  transition: transform 1s ease, opacity 1s ease; /* Smooth transition for both zoom and fade */
+}
+
+/* Zoom and fade in effect */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  opacity: 1;
+  transform: scale(1); /* Normal size when active */
+}
+
+.carousel-item {
+  opacity: 0; /* Start with hidden images */
+  transform: scale(0.95); /* Start slightly zoomed out */
+  transition: opacity 1s ease, transform 1s ease; /* Smooth transition for opacity and zoom */
+}
+
+/* Active carousel item: zoom in and fade in */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  opacity: 1; /* Fully visible when active */
+  transform: scale(1); /* Zoom in to normal size */
+}
+
+/* Optional: Add some spacing around the carousel */
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}

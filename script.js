@@ -173,7 +173,6 @@ var spanText = function(text) {
   window.addEventListener('load', () => {
     document.querySelector('.nameContainer').classList.add('animateOnLoad');
   });
-  
 
 
 
