@@ -100,7 +100,10 @@
         
           <!-- Right Column with Video Mockup -->
           <div class="col-12 col-lg-6 px-3 EcoConnectMock">
-            <video src="./assets/EcoMock.webm" style="height: 450px; width: auto; margin-top: 30px;" autoplay loop muted ></video>
+
+      <video id="ecoMockVideo" autoplay muted loop style="height: 450px;" src="./assets/EcoMock.webm"></video>
+           
+            
           </div>
         </div>
         
@@ -595,6 +598,14 @@ document.getElementById('ProzenPharmaceuticalsLink').addEventListener('click', f
   });
 </script>
 
+<script>
+  var video = document.getElementById('ecoMockVideo');
+  video.play(); // Start video when page loads
+  video.onended = function() {
+    video.currentTime = 0;  // Reset the video to the start
+    video.play();  // Play it again
+  };
+  </script>
 
 
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
