@@ -178,7 +178,6 @@ var spanText = function(text) {
 
 
 
-
 // const backgroundElement = document.querySelector('.EcoConnect');
 
 // let currentImage = 0;

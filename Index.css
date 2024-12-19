@@ -580,12 +580,19 @@ margin-left: 20px;
 .BikeRevive {
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.092); 
     position: relative; 
+    overflow: hidden;
     background: linear-gradient(to left, rgba(230, 240, 240, 0.5), rgba(240, 239, 230, 0.5));
     border-radius: 10px; 
     background-image: url(./assets/Bikerevivebg1.png);
     background-position: center;
     background-size: cover;
     background-position: top;
+}
+
+
+
+.KinViewMock video {
+  margin-top: 90px !important;
 }
 
 .BikeReviveLogo img  {
@@ -696,8 +703,6 @@ color: white;
     width: 80px;
     height: auto;
 }
-
-
 
 /* 
 .kproject {
@@ -841,7 +846,7 @@ label 				 {
 
 /* active state */
 input:focus ~ label, input:valid ~ label 		{
-  top:-20px;
+  top:-30px;
   font-size:14px;
   color:#5264AE;
 }
@@ -917,7 +922,10 @@ textarea {
 
 
 
-
+.SocialConnect {
+  display: flex;
+  gap: 16px;
+}
 
 .SocialConnect svg {
   padding: 4px;
@@ -1090,40 +1098,3 @@ textarea {
 
 
 
-
-
-/* Ensure the carousel images fill the container */
-.carousel-item img {
-  object-fit: cover; /* Ensures the image covers the container */
-  height: 380px;
-  margin-top: 30px; /* Set height for the images */
-  transition: transform 1s ease, opacity 1s ease; /* Smooth transition for both zoom and fade */
-}
-
-/* Zoom and fade in effect */
-.carousel-item-next,
-.carousel-item-prev,
-.carousel-item.active {
-  opacity: 1;
-  transform: scale(1); /* Normal size when active */
-}
-
-.carousel-item {
-  opacity: 0; /* Start with hidden images */
-  transform: scale(0.95); /* Start slightly zoomed out */
-  transition: opacity 1s ease, transform 1s ease; /* Smooth transition for opacity and zoom */
-}
-
-/* Active carousel item: zoom in and fade in */
-.carousel-item-next,
-.carousel-item-prev,
-.carousel-item.active {
-  opacity: 1; /* Fully visible when active */
-  transform: scale(1); /* Zoom in to normal size */
-}
-
-/* Optional: Add some spacing around the carousel */
-.container {
-  max-width: 80%;
-  margin: 0 auto;
-}
