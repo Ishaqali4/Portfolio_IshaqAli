@@ -352,20 +352,25 @@ backdrop-filter: blur(30px);
 
 @media (max-width: 480px) {
   .EcoConnect {
-    height: 924px; /* Adjust the height for small mobile devices */
+    height: 1004px; /* Adjust the height for small mobile devices */
     overflow: hidden;
   }
 }
 
 /* Small Mobile view (481px to 600px) */
-@media (min-width: 481px) and (max-width: 600px) {
+@media (min-width: 481px) and (max-width: 560px) {
   .EcoConnect {
-    height: 880px; /* Adjust the height for slightly larger mobile screens */
+    height: 870px; /* Adjust the height for slightly larger mobile screens */
+  }
+}
+@media (min-width: 581px) and (max-width: 680px) {
+  .EcoConnect {
+    height: 900px; /* Adjust the height for slightly larger mobile screens */
   }
 }
 
 /* Medium Mobile or Tablet view (601px to 768px) */
-@media (min-width: 601px) and (max-width: 768px) {
+@media (min-width: 681px) and (max-width: 768px) {
   .EcoConnect {
     margin: 0 !important;
     height: 820px; /* Default height for medium-sized mobile/tablet screens */
@@ -373,18 +378,29 @@ backdrop-filter: blur(30px);
 }
 
 /* Large Tablet or Small Desktop view (769px to 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .EcoConnect {
-    height: 800px; /* Increase height for larger tablets or small desktops */
+    height: 780px; 
   }
 }
 
-/* Large Desktop view (1025px and up) */
-@media (min-width: 1025px) {
+/* For screens smaller than 1024px */
+@media (min-width: 992px)  and (max-width: 1024px) {
   .EcoConnect {
-    height: 400px !important; /* Adjust height for large desktop screens */
+height: 440px; 
   }
 }
+
+
+
+
+
+/* Large Desktop view (1025px and up) */
+/* @media (min-width: 1025px) {
+  .EcoConnect {
+    height: 400px !important;
+  }
+} */
 
 .EcoConnect::before {
   content: "";
