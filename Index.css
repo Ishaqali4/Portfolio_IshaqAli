@@ -620,15 +620,22 @@ height: 440px;
   background: linear-gradient(to left, rgba(230, 240, 240, 0.5), rgba(240, 239, 230, 0.5));
   border-radius: 10px; 
   background-position: top !important;
-  background-image: url(./assets/Kinviewbg1.png);
-  background-position: center;
+  background-image: url(./assets/image\ 77.png);
+  background-position: left;
   background-size: cover;
 
 }
 
 .KinViewMock{
+  opacity: 0.5;
   display: flex;
-  justify-content: center;
+justify-content: center;
+align-items: center !important;
+margin-bottom: 60px;
+}
+
+.KinViewMock video {
+  border-radius: 20px;
 }
 
 .KinViewLogoName img {
@@ -662,14 +669,12 @@ margin-left: 20px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.092); 
     position: relative; 
     overflow: hidden;
-    background: linear-gradient(to left, rgba(230, 240, 240, 0.5), rgba(240, 239, 230, 0.5));
     border-radius: 10px; 
     background-image: url(./assets/Bikerevivebg1.png);
     background-position: center;
     background-size: cover;
     background-position: top;
 }
-
 
 
 .KinViewMock video {
@@ -907,13 +912,11 @@ input 				{
   padding:10px 10px 10px 5px;
   display:block;
   border:none;
-  border-bottom:1px solid #757575;
 }
 input:focus 		{ outline:none; }
 
 /* LABEL ======================================= */
 label 				 {
-  color:#999; 
   font-size:18px;
   font-weight:normal;
   position:absolute;
@@ -927,7 +930,7 @@ label 				 {
 
 /* active state */
 input:focus ~ label, input:valid ~ label 		{
-  top:-30px;
+  top:-50px;
   font-size:14px;
   color:#5264AE;
 }

@@ -101,7 +101,7 @@
           <!-- Right Column with Video Mockup -->
           <div class="col-12 col-lg-6 px-3 EcoConnectMock">
 
-      <video id="ecoMockVideo" autoplay muted loop style="height: 450px; margin-top: 20px;" src="./assets/EcoMock.webm"></video>
+      <video id="ecoMockVideo" autoplay muted loop style="border-radius: 20px; opacity: 0.6; height: 360px; " src="./assets/6278045591683470746.mp4"></video>
            
             
           </div>
@@ -116,13 +116,7 @@
   
   
           
-      <div class="col-12 col-lg-6 px-3 KinViewMock">
-      
-          <video src="./assets/Animated-iPhone-mockup-[remix].webm"  style="height: 400px; width: auto;" autoplay loop  >
-              
-          </video>        
-                  </div>
-  
+     
   
             
   
@@ -150,7 +144,13 @@
       
           </div>
       
+          <div class="col-12 col-lg-6 px-3 KinViewMock">
       
+            <video id="kinMockVideo" src="./assets/6278045591683470764.mp4"  style="height: 360px;" autoplay loop  >
+                
+            </video>        
+                    </div>
+    
           
       
       
@@ -165,16 +165,7 @@
       <div class=" m-4 row  BikeRevive">
   
   
-          
-
-  
-  
-  
-  
-  
-  
-  
-  
+     
           <div  class=" col-12 col-lg-6 p-3  BikeReviveContent">
       
               <div class=" my-4 BikeReviveLogo">
@@ -198,9 +189,9 @@
           </div>
       
       
-          <div class="col-12 container col-lg-6 px-3 KinViewMock">
+          <div class="col-12 container col-lg-6 px-3 BikeManiaMock">
      
-            <video src="./assets/New-file.webm" autoplay loop></video>
+            <video src="./assets/1219-03_1734625656411.mp4" style="width: 300px;" autoplay loop></video>
                   </div>
           
           
@@ -271,8 +262,12 @@
       
               <p>Integrated interactive elements with JavaScript and implemented animations using GSAP, enhancing user engagement and
                 visual appeal, particularly with scroll-based effects and dynamic navigation menus.</p>
-<p style="text-align: center;">              <button  id="ProzenPharmaceuticalsLink" class="text-center button-29" role="button">Visit link </button>
+                <br>
+<p style="text-align: center;">             
+  
+  <button  id="ProzenPharmaceuticalsLink" class="text-center button-29" role="button">Visit link </button>
 </p>
+<br>
           </div>
       
       
@@ -405,18 +400,19 @@
       <!-- Text Content Section -->
       <div class="col-12 col-lg-6">
           <h6 id="designation">UI UX Designer</h6>
-          <h1 style="font-weight: 700;">Ishaq Ali Shaik</h1>
-          <p style="font-size: 32px;">
+          <h1 style="font-weight: 700; font-size: 22px;">Ishaq Ali Shaik</h1>
+          <p style=" margin-bottom: 6px; font-size: 32px;">
               I Enjoy Creating <span style="color: rgb(155, 155, 8);">User-Centric</span> and <span style="color: rgb(26, 176, 59);">Human Experience</span>
           </p>
-          <br>
-          <h4 style="font-weight: 700;"><span style="background-color: rgb(192, 141, 255); padding: 4px; border-radius: 12px;">SKILLS</span></h4>
-          <p>Wireframing, Prototyping, User-Centered Design, Usability Testing</p>
-  
-          <h4 style="font-weight: 700;"><span style="background-color: rgb(250, 255, 184); padding: 4px; border-radius: 12px;">TOOLS</span></h4>
+        
+          <h2 style=" margin-bottom: 10px; font-weight: 700;"><span style="color:  rgb(192, 141, 255) ;  border-radius: 12px;">SKILLS</span></h2>
+        
+          <p style="margin-bottom: 12px;">Wireframing, Prototyping, User-Centered Design, Usability Testing</p>
+
+          <h4 style=" margin-bottom: 6px; font-weight: 700;"><span style="background-color: rgb(250, 255, 184); padding: 4px; border-radius: 12px;">TOOLS</span></h4>
           <p>Figma, Adobe XD, Protopie, Zeplin, Marvel, Miro, Maze</p>
-  
-          <h3 style="font-weight: 700;"><span style="background-color: rgb(149, 165, 255); padding: 4px; border-radius: 12px;">WEB DEVELOPMENT</span></h3>
+  <br>
+          <h3 style="margin-bottom: 8px; font-weight: 700;"><span style="background-color: rgb(149, 165, 255); padding: 4px; border-radius: 12px;">WEB DEVELOPMENT</span></h3>
           <p>HTML, CSS, Bootstrap, JavaScript</p>
       </div>
   </div>
@@ -497,7 +493,7 @@
                 </div>
                 
                 <div>
-                  <textarea id="message" name="message" required ></textarea>
+                  <textarea placeholder="Enter your Message" id="message" name="message" required ></textarea>
                 </div>
                 
                 <input type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300">
@@ -599,12 +595,21 @@ document.getElementById('ProzenPharmaceuticalsLink').addEventListener('click', f
 </script>
 
 <script>
+  
   var video = document.getElementById('ecoMockVideo');
   video.play(); // Start video when page loads
   video.onended = function() {
     video.currentTime = 0;  // Reset the video to the start
     video.play();  // Play it again
   };
+  
+  var video = document.getElementById('kinMockVideo');
+  video.play(); // Start video when page loads
+  video.onended = function() {
+    video.currentTime = 0;  // Reset the video to the start
+    video.play();  // Play it again
+  };
+
   </script>
 
 
