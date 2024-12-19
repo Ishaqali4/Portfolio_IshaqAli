@@ -365,7 +365,7 @@ backdrop-filter: blur(30px);
 }
 @media (min-width: 581px) and (max-width: 680px) {
   .EcoConnect {
-    height: 900px; /* Adjust the height for slightly larger mobile screens */
+    height: 850px; /* Adjust the height for slightly larger mobile screens */
   }
 }
 
