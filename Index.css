@@ -333,19 +333,17 @@ backdrop-filter: blur(30px);
 }
 
 
-/* Mobile view (up to 480px) */
 
-
+/* 
 @media (min-width: 321px) and (max-width: 370px) {
   .EcoConnect {
-    height: 1800px; /* Adjust the height for smaller mobile devices like 370px width */
+    height: 1800px; 
   }
 }
 
-/* Mobile Small view (371px to 480px) */
 @media (min-width: 371px) and (max-width: 480px) {
   .EcoConnect {
-    height: 1100px; /* Adjust the height for small mobile devices */
+    height: 1100px; 
   }
 }
 
@@ -353,54 +351,50 @@ backdrop-filter: blur(30px);
 
 @media (max-width: 480px) {
   .EcoConnect {
-    height: 1004px; /* Adjust the height for small mobile devices */
+    height: 1004px; 
     overflow: hidden;
   }
 }
 
-/* Small Mobile view (481px to 600px) */
 @media (min-width: 400px) and (max-width: 452px) {
   .EcoConnect {
-    height: 990px; /* Adjust the height for slightly larger mobile screens */
+    height: 990px; 
   }
 }
 @media (min-width: 453px) and (max-width: 480px) {
   .EcoConnect {
-    height: 944px; /* Adjust the height for slightly larger mobile screens */
+    height: 944px; 
   }
 }
 @media (min-width: 481px) and (max-width: 558px) {
   .EcoConnect {
-    height: 896px; /* Adjust the height for slightly larger mobile screens */
+    height: 896px; 
   }
 }
 @media (min-width: 559px) and (max-width: 650px) {
   .EcoConnect {
-    height: 855px  ; /* Adjust the height for slightly larger mobile screens */
+    height: 855px  ; 
   }
 }
 
-/* Medium Mobile or Tablet view (601px to 768px) */
 @media (min-width: 651px) and (max-width: 768px) {
   .EcoConnect {
     margin: 0 !important;
-    height: 820px; /* Default height for medium-sized mobile/tablet screens */
+    height: 820px; 
   }
 }
 
-/* Large Tablet or Small Desktop view (769px to 1024px) */
 @media (min-width: 769px) and (max-width: 992px) {
   .EcoConnect {
     height: 780px; 
   }
 }
 
-/* For screens smaller than 1024px */
 @media (min-width: 992px)  and (max-width: 1024px) {
   .EcoConnect {
 height: 440px; 
   }
-}
+} */
 
 
 
@@ -412,7 +406,7 @@ height: 440px;
     height: 400px !important;
   }
 } */
-
+/* 
 .EcoConnect::before {
   content: "";
   position: absolute;
@@ -427,7 +421,7 @@ height: 440px;
   transition: opacity 2s ease-in-out; 
   z-index: -1;  
 }
-
+ */
 
 .EcoLogo p {
   margin-top: 16px;
@@ -442,10 +436,9 @@ height: 440px;
 
 
 
+/* 
 
 
-
-/* Tablet (max-width: 992px) */
 @media (max-width: 992px) {
 
   .EcoConnect .Eco, 
@@ -459,7 +452,6 @@ height: 440px;
   }
 }
 
-/* Mobile (max-width: 576px) */
 @media (max-width: 576px) {
   .EcoConnect {
     padding: 10px;
@@ -481,32 +473,30 @@ height: 440px;
   }
 }
 
-/* Extra Small Devices (max-width: 320px) */
 @media (max-width: 320px) {
   .EcoConnect {
-    padding: 8px; /* Further reduce padding for very small screens */
+    padding: 8px; 
   }
 
   .EcoConnect .Eco, 
   .EcoConnect .EcoConnectMock {
-    padding: 8px; /* Adjust padding for small screens */
+    padding: 8px;
   }
 
   .EcoConnect .EcoLogo img {
-    max-width: 90%; /* Slightly reduce the logo size */
+    max-width: 90%; 
     height: auto;
   }
 
   .EcoConnectMock video {
-    width: 100%; /* Ensure the video fits well */
+    width: 100%; 
     height: auto;
   }
 }
 
-/* Mobile Medium (max-width: 375px) */
 @media (max-width: 375px) {
   .EcoConnect {
-    padding: 9px; /* Adjust padding slightly */
+    padding: 9px; 
   }
 
   .EcoConnect .Eco, 
@@ -515,7 +505,7 @@ height: 440px;
   }
 
   .EcoConnect .EcoLogo img {
-    max-width: 95%; /* Slightly smaller logo for this width */
+    max-width: 95%;
     height: auto;
   }
 
@@ -525,10 +515,9 @@ height: 440px;
   }
 }
 
-/* Mobile Large (max-width: 425px) */
 @media (max-width: 425px) {
   .EcoConnect {
-    padding: 10px; /* Adjust padding for larger small screens */
+    padding: 10px;
   }
 
   .EcoConnect .Eco, 
@@ -537,7 +526,7 @@ height: 440px;
   }
 
   .EcoConnect .EcoLogo img {
-    max-width: 100%; /* Keep the logo full width for slightly larger screens */
+    max-width: 100%;
     height: auto;
   }
 
@@ -546,7 +535,7 @@ height: 440px;
     height: auto;
   }
 }
-
+ */
 
 
 
@@ -638,7 +627,7 @@ margin-bottom: 60px;
 }
 
 .KinViewMock video {
-  border-radius: 20px;
+  border-radius: 32px;
 }
 
 .KinViewLogoName img {
@@ -679,24 +668,8 @@ margin-left: 20px;
     background-position: top;
 }
 
-.BikeManiaMock {
-  width:  auto;
-}
 
-.BikeManiaMock video {
-    width: 220px !important;
-  display: flex;
-  opacity: 0.6;
-  margin-top: 45px;
-  margin-left: 180px;
-  justify-content: center !important;
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
 
-.KinViewMock video {
-  margin-top: 90px !important;
-}
 
 .BikeReviveLogo img  {
   height: 60px;
