@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const textElement = document.getElementById("typed-text");
     const cursor = document.getElementById("cursor");
 
-    // Static text before "Designer", "Developer", or "Programmer"
     const staticText = "I'm a ";
     const words = ["UI UX Designer", "Web Developer" ];  
     let currentWordIndex = 0; 
@@ -20,45 +19,39 @@ document.addEventListener("DOMContentLoaded", function () {
         const fullText = staticText + word;        
 
         if (!isErasing) {
-            // Typing phase
             if (charIndex < fullText.length) {
                 if (charIndex < staticText.length) {
-                    // Keep the static part "I'm a "
+                   
                     textElement.innerHTML = staticText;
                 } else {
-                    // Add the word (either "Designer", "Developer", or "Programmer")
                     const currentWord = fullText.slice(staticText.length, charIndex + 1);
-                    const wordClass = getClassForWord(word);  // Get class based on current word
+                    const wordClass = getClassForWord(word); 
                     textElement.innerHTML = staticText + `<span class="${wordClass}">${currentWord}</span>`;
                 }
                 charIndex++;
-                setTimeout(typeText, typingSpeed);  // Continue typing
+                setTimeout(typeText, typingSpeed); 
             } else {
-                // Once typing is complete, wait a moment before starting to erase
                 typingComplete = true;
                 setTimeout(() => {
-                    isErasing = true;  // Start erasing
-                    setTimeout(typeText, 1000);  // Wait before erasing
+                    isErasing = true; 
+                    setTimeout(typeText, 1000); 
                 }, 1000);
             }
         } else {
-            // Erasing phase
             if (charIndex > staticText.length) {
                 const currentHTML = textElement.innerHTML;
                 textElement.innerHTML = currentHTML.slice(0, currentHTML.length - 1);
                 charIndex--;
-                setTimeout(typeText, erasingSpeed);  // Continue erasing
+                setTimeout(typeText, erasingSpeed); 
             } else {
-                // Once erased, switch to the next word
                 isErasing = false;
                 typingComplete = false;
-                currentWordIndex = (currentWordIndex + 1) % words.length; // Toggle between words
-                setTimeout(typeText, 500);  // Delay before typing the next word
+                currentWordIndex = (currentWordIndex + 1) % words.length; 
+                setTimeout(typeText, 500);
             }
         }
     }
 
-    // Function to get class for the current word
     function getClassForWord(word) {
         switch (word) {
             case "Designer":
@@ -74,14 +67,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Function to animate the blinking cursor
     function blinkCursor() {
         setInterval(function () {
             cursor.style.visibility = cursor.style.visibility === "hidden" ? "visible" : "hidden";
         }, blinkSpeed);
     }
 
-    // Start typing and cursor blinking
     typeText();
     blinkCursor();
 });
@@ -101,20 +92,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 var theToggle = document.getElementById('toggle');
 
-// based on Todd Motto functions
-// https://toddmotto.com/labs/reusable-js/
 
-// hasClass
 function hasClass(elem, className) {
 	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
 }
-// addClass
 function addClass(elem, className) {
     if (!hasClass(elem, className)) {
     	elem.className += ' ' + className;
     }
 }
-// removeClass
 function removeClass(elem, className) {
 	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
 	if (hasClass(elem, className)) {
@@ -124,7 +110,6 @@ function removeClass(elem, className) {
         elem.className = newClass.replace(/^\s+|\s+$/g, '');
     }
 }
-// toggleClass
 function toggleClass(elem, className) {
 	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
     if (hasClass(elem, className)) {
@@ -144,7 +129,6 @@ theToggle.onclick = function() {
 
 
 
-// Function to wrap each letter in a span element
 var spanText = function(text) {
     var string = text.innerText;
     var spaned = '';
@@ -155,11 +139,9 @@ var spanText = function(text) {
     text.innerHTML = spaned;
   };
   
-  // Apply the spanText function to the h1 with the specific ID
   var headline = document.getElementById("animatedHeading");
   spanText(headline);
   
-  // Add delay to each letter's animation based on index
   let animations = document.querySelectorAll('#animatedHeading');
   
   animations.forEach(animation => {
@@ -169,7 +151,6 @@ var spanText = function(text) {
     });
   });
   
-  // Trigger animation when the page loads
   window.addEventListener('load', () => {
     document.querySelector('.nameContainer').classList.add('animateOnLoad');
   });

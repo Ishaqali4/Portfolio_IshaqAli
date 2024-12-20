@@ -147,7 +147,7 @@
       
           <div class="col-12 col-lg-6 px-3  KinViewMock">
       
-            <video  style="border-radius: 32px; opacity: 0.7; width: 220px; "  id="kinMockVideo" src="./assets/KinViewMockVideo.mp4" loop autoplay>
+            <video  style="border-radius: 32px; opacity: 0.7; width: 220px; "  id="kinMockVideo" src="./assets/KinViewMockVideo.mp4" muted loop autoplay>
             </video>
             
                     </div>
@@ -192,7 +192,7 @@
       
           <div class="col-12 col-lg-6 px-3 BikeManiaMock">
      
-            <video style="border-radius: 32px; opacity: 0.7; width: 220px; "  id="BikeMock" src="./assets/BikeManiaMockVideo.mp4" loop autoplay></video>
+            <video style="border-radius: 32px; opacity: 0.7; width: 220px; "  id="BikeMock" src="./assets/BikeManiaMockVideo.mp4" loop autoplay  muted></video>
                            
           </div>
           
@@ -302,84 +302,6 @@
 
 
 
-
-<!-- <div class="project">
-
-
-    
-    <div class="projects">
-    
-    <div class="kproject">
-    
-    <div class="kcontent">
-    
-        <div class="klogo">
-            
-            <img src="./assets/kinviewlogo.png" alt="" srcset="">
-        <p style="font-size: 32px; ">KinView (Parental App)</p>
-        
-        
-        </div>
-        <p style= "padding-top: 120px; font-size: 22px;">The Kinview app is designed to enhance parental engagement and ensure child safety by providing live CCTV monitoring, an instant SOS call feature for emergencies, detailed tracking of daily activities, and timely notifications about upcoming events, all aimed at fostering a stronger connection between parents and their children's educational experience.</p>
-        
-        
-        <p style="  margin-top: 50px; border-width: 2px 8px 1px 8px  ; border: dotted black; font-size: 22px;">Read Case Study</p>
-    </div>
-    
-    
-    <div class="kvideo">
-        <video src="./portfolioassets/Animated-iPhone-mockup-[remix].webm" autoplay loop></video>
-    </div>
-    
-    </div>
-    <div class="kproject">
-    
-    <div class="kcontent">
-    
-        <div class="klogo">
-            
-            <img src="./portfolioassets/kinviewlogo.png" alt="" srcset="">
-        <p >KinView (Parental App)</p>
-        
-        </div>
-        <p>The Kinview app is designed to enhance parental engagement and ensure child safety by providing live CCTV monitoring, an instant SOS call feature for emergencies, detailed tracking of daily activities, and timely notifications about upcoming events, all aimed at fostering a stronger connection between parents and their children's educational experience.</p>
-        
-        
-        <p>Read Case Study</p>
-    </div>
-    
-    
-    <div class="kvideo">
-        <video src="./portfolioassets/Animated-iPhone-mockup-[remix].webm" autoplay loop></video>
-    </div>
-    
-    </div>
-    <div class="kproject">
-    
-    <div class="kcontent">
-    
-        <div class="klogo">
-            
-            <img src="./portfolioassets/kinviewlogo.png" alt="" srcset="">
-        <p>KinView (Parental App)</p>
-        
-        </div>
-        <p>The Kinview app is designed to enhance parental engagement and ensure child safety by providing live CCTV monitoring, an instant SOS call feature for emergencies, detailed tracking of daily activities, and timely notifications about upcoming events, all aimed at fostering a stronger connection between parents and their children's educational experience.</p>
-        
-        
-        <p>Read Case Study</p>
-    </div>
-    
-    
-    <div class="kvideo">
-        <video src="./portfolioassets/Animated-iPhone-mockup-[remix].webm" autoplay loop></video>
-    </div>
-    
-    </div>
-    
-    </div>
-</div>
- -->
 <h1 style="text-align: center; font-size: 3rem;">And me!</h1> 
 
 
@@ -504,7 +426,6 @@
             </form>
             
             
-            <!-- Suggestion message that can be clicked -->
            
             
             </div>
@@ -583,17 +504,13 @@ document.getElementById('ProzenPharmaceuticalsLink').addEventListener('click', f
 
 
 <script>
-  // Get references to the video elements
   const video1 = document.getElementById('video1');
   const video2 = document.getElementById('video2');
 
-  // Listen for the 'ended' event on the first video
   video1.addEventListener('ended', function() {
-      // Hide the first video and show the second video
       video1.style.display = 'none';
       video2.style.display = 'block';
 
-      // Play the second video
       video2.play();
   });
 </script>
@@ -601,34 +518,30 @@ document.getElementById('ProzenPharmaceuticalsLink').addEventListener('click', f
 <script>
   
   var video = document.getElementById('ecoMockVideo');
-  video.play(); // Start video when page loads
+  video.play();
   video.onended = function() {
-    video.currentTime = 0;  // Reset the video to the start
-    video.play();  // Play it again
+    video.currentTime = 0;  
+    video.play(); 
   };
   
   var video = document.getElementById('kinMockVideo');
-  video.play(); // Start video when page loads
+  video.play(); 
   video.onended = function() {
-    video.currentTime = 0;  // Reset the video to the start
-    video.play();  // Play it again
+    video.currentTime = 0;  
+    video.play();  
   };
 
 
   document.getElementById('kinMockVideo').addEventListener('ended', function() {
-    this.currentTime = 0; // Reset the video to the beginning
-    this.play(); // Play the video again
+    this.currentTime = 0; 
+    this.play(); 
 });
 
 
-// Get the video element by its ID
 const video = document.getElementById('BikeMock');
 
-// Listen for when the video ends
 video.addEventListener('ended', function() {
-    // Set the video time to 0 to restart it
     video.currentTime = 0;
-    // Play the video again
     video.play();
 });
   </script>
@@ -638,45 +551,38 @@ video.addEventListener('ended', function() {
 
 
 <script>
-  // Function to validate the email input
   function validateEmail() {
     var email = document.getElementById("email").value;
     var errorMessage = document.getElementById("error-message");
 
-    // Regular expression for basic email validation
     var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
-    // Clear previous error message
     errorMessage.textContent = "";
 
-    // Test email against regex pattern
     if (!emailPattern.test(email)) {
-      errorMessage.textContent = "Please enter a valid email address."; // Show error message
-      return false; // Prevent form submission
+      errorMessage.textContent = "Please enter a valid email address."; 
+      return false;
     }
 
-    return true; // Allow form submission if email is valid
+    return true; 
   }
 
-  // Function to show the suggestion message when the user focuses on the textarea
   function showMessageSuggestion() {
     var suggestion = document.getElementById("suggestion");
-    suggestion.style.display = 'block';  // Show the suggestion
+    suggestion.style.display = 'block';  
   }
 
-  // Function to insert the suggestion into the textarea when clicked
   document.getElementById("suggestion").onclick = function() {
     var messageField = document.getElementById("message");
-    messageField.value = "Got an exciting project? Let me know!";  // Insert the suggestion
-    messageField.focus();  // Focus back to the textarea
-    this.style.display = 'none';  // Hide the suggestion after it has been clicked
+    messageField.value = "Got an exciting project? Let me know!";  
+    messageField.focus(); 
+    this.style.display = 'none';  
   }
 
-  // Optionally, hide the suggestion when the user starts typing in the textarea
   document.getElementById("message").addEventListener("input", function() {
     var suggestion = document.getElementById("suggestion");
     if (this.value.trim() !== "") {
-      suggestion.style.display = 'none';  // Hide the suggestion once user starts typing
+      suggestion.style.display = 'none'; 
     }
   });
 </script>

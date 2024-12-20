@@ -52,7 +52,7 @@ backdrop-filter: blur(30px);
 
   @media (max-width: 768px) {
     .header {
-      justify-content: center; /* Ensure content is centered */
+      justify-content: center;
       padding: 15px;
     }
     .header a {
@@ -95,10 +95,8 @@ backdrop-filter: blur(30px);
 
 
 
-/* Initial styling */
 
 
-/* Targeting the specific h1 with the id 'animatedHeading' */
 #animatedHeading span {
   display: inline-block;
   opacity: 0;
@@ -106,17 +104,14 @@ backdrop-filter: blur(30px);
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-/* Animation on hover */
 .nameContainer:hover #animatedHeading span {
   animation: slideLeft 1.5s forwards;
 }
 
-/* Class to trigger animation on page load */
 .animateOnLoad #animatedHeading span {
   animation: slideLeft 1.5s forwards;
 }
 
-/* Keyframe for sliding effect */
 @keyframes slideLeft {
   from {
     opacity: 0;
@@ -792,58 +787,6 @@ color: white;
 background-image: url(./assets/image\ 63.png);
 }
 
-/* 
-.kproject {
-    display: flex;
-    margin: 30px;
-     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2); 
-height: 700px;
-width: auto;
-
-border-radius: 20px;
-    padding: 20px;
-    background-color: #e6f0f0;
-}
-
-
-.klogo {
-    display: flex;
-}
-
-.klogo img {
-
-    width: 60px;
-    height: auto;
-}
-
-.klogo p {
-    font-size: 30px;
-    margin-left:30px ;
-}
-
-.kcontent {
-    width: 50%;
-}
-
-
-.kvideo {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-}
-
-.kvideo video {
-height: 300px;
-width: auto;
-}
-
-.project {
-    padding: 10px;
-    background-color: #f0efe6;
-}
- */
-
-
 
 
 
@@ -901,13 +844,11 @@ width: auto;
 
 
 
-/* Group container for inputs */
 .group {
   position: relative;
   margin-bottom: 30px;
 }
 
-/* Styling for the input fields */
 .group input[type="text"] {
   width: 100%;
   padding: 10px 0;
@@ -919,7 +860,6 @@ width: auto;
   transition: border-color 0.3s;
 }
 
-/* Styling for the textareas */
 textarea {
   width: 100%;
   height: 150px;
@@ -932,7 +872,6 @@ textarea {
   transition: border-color 0.3s;
 }
 
-/* Placeholder text */
 textarea::placeholder,
 input::placeholder {
   color: #999;
