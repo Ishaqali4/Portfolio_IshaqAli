@@ -322,7 +322,7 @@ backdrop-filter: blur(30px);
 .EcoConnect {
 
   
-  background-image: url(./assets/EcoConnectbg1.png);
+  background-image: url(./assets/image\ 86.png);
   position: relative;
   background-size: cover;
   border-radius: 10px;
@@ -583,11 +583,6 @@ height: 440px;
   color: #a6c853 !important;
 }
 
-.ecoConnect p {
-  color: #afeeee !important;
-}
-
-
 .EcoConnectMock{
   display: flex;
   align-items: center;
@@ -662,7 +657,7 @@ margin-left: 20px;
     position: relative; 
     overflow: hidden;
     border-radius: 10px; 
-    background-image: url(./assets/image\ 85.png);
+    background-image: url(./assets/Bikerevivebg1.png);
     background-position: center;
     background-size: cover;
     background-position: top;
