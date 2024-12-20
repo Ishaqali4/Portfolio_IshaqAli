@@ -1,6 +1,6 @@
 /* Base font family and reset */
 body {
-  background: linear-gradient(to left, #afeeee, #f2eeb2);
+  background: linear-gradient(to left, #ceffff, #fcf9cb);
   background-size: 400% 400%;
   animation: moveGradient 6s ease infinite;
     margin: 0;
@@ -773,6 +773,10 @@ color: white;
 #pp {
     width: 80px;
     height: auto;
+}
+
+.ProzenPharmaceuticals{
+background-image: url(./assets/image\ 63.png);
 }
 
 /* 
