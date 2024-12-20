@@ -176,6 +176,23 @@ var spanText = function(text) {
 
 
 
+  document.getElementById('kinMockVideo').addEventListener('ended', function() {
+    this.currentTime = 0; // Reset the video to the beginning
+    this.play(); // Play the video again
+});
+
+
+// Get the video element by its ID
+const video = document.getElementById('BikeMock');
+
+// Listen for when the video ends
+video.addEventListener('ended', function() {
+    // Set the video time to 0 to restart it
+    video.currentTime = 0;
+    // Play the video again
+    video.play();
+});
+
 
 
 // const backgroundElement = document.querySelector('.EcoConnect');
