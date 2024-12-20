@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to left, #d9e9ad, #ffeaa5);
+  background: linear-gradient(to left, #fbffee, #fff8e1);
   background-size: 400% 400%;
   animation: moveGradient 6s ease infinite;
     margin: 0;
@@ -247,7 +247,7 @@ backdrop-filter: blur(30px);
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to left, #afeeee, #f2eeb2);
+  background: linear-gradient(to left, #fbffee, #fff8e1);
     background-size: 400% 400%;
     animation: moveGradient 6s ease infinite;
   }
@@ -612,7 +612,7 @@ height: 440px;
 .KinView{
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.092); 
   position: relative; 
-  background: linear-gradient(to left, rgba(230, 240, 240, 0.5), rgba(240, 239, 230, 0.5));
+  background: linear-gradient(to left, #fbffee, #fff8e1);
   border-radius: 10px; 
   background-position: top !important;
   background-image: url(./assets/image\ 77.png);
