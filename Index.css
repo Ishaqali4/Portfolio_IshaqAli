@@ -555,6 +555,32 @@ height: 440px;
   padding: 0; 
 }
 
+.EcoConnect {
+  position: relative;
+  perspective: 1000px; /* Adds depth to the container */
+}
+
+.EcoConnect .col-12 {
+  transition: transform 0.1s ease-out; /* Smooth transition */
+}
+
+.EcoConnect .Eco, 
+.EcoConnect .EcoConnectMock {
+  transition: transform 0.1s ease-out;
+}
+
+.EcoConnect .EcoConnectMock video {
+  transition: transform 0.1s ease-out;
+  border-radius: 32px;
+  opacity: 0.7;
+  width: 220px;
+}
+
+/* Optional: Adding shadow for more depth */
+.EcoConnect:hover .Eco, 
+.EcoConnect:hover .EcoConnectMock {
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+}
 
 
 .Eco p{

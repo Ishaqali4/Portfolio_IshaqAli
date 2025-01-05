@@ -157,6 +157,7 @@ var spanText = function(text) {
 
 
 
+  
 
 // const backgroundElement = document.querySelector('.EcoConnect');
 

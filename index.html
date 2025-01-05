@@ -53,19 +53,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div id="project" class="section">
 
   <div class=" container-fluid projects">
@@ -584,6 +571,24 @@ video.addEventListener('ended', function() {
       suggestion.style.display = 'none'; 
     }
   });
+
+  document.querySelector('.EcoConnect').addEventListener('mousemove', function (e) {
+  const width = this.offsetWidth;
+  const height = this.offsetHeight;
+  
+  const mouseX = e.pageX - this.offsetLeft;
+  const mouseY = e.pageY - this.offsetTop;
+
+  const centerX = width / 2;
+  const centerY = height / 2;
+  
+  const deltaX = (mouseX - centerX) / centerX;
+  const deltaY = (mouseY - centerY) / centerY;
+
+  // Apply 3D rotation and scaling based on mouse movement
+  this.style.transform = `rotateX(${deltaY * 10}deg) rotateY(${deltaX * 10}deg)`;
+});
+
 </script>
 
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
