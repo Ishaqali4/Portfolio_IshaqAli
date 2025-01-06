@@ -1197,7 +1197,7 @@ input:focus + .highlight {
   width: 100%;  
 }
 .skills-container {
-  margin:10px 120px;
+  margin:10px 100px;
   overflow: hidden;
 }
 @media screen and (max-width: 600px) {
@@ -1240,21 +1240,48 @@ input:focus + .highlight {
 }
 
 
+@media (min-width: 1024px) {
+  .skills-container {
+    margin: 10px 100px; 
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .skills-container {
+    margin: 10px 50px;  
+  }
+}
+
+@media (max-width: 767px) {
+  .skills-container {
+    margin: 10px 20px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    margin: 10px 10px;  
+  }
+}
+
+
 
 
 .tools-set{
   width: 100%;  
 }
+
 .tools-container {
-  margin:10px 120px;
+  margin:10px 100px;
   overflow: hidden; 
 }
 
 .tools {
   display: flex;
   flex-wrap: nowrap; 
-  animation: scrolltools 55s linear infinite; 
+  animation: scrolltools 95s linear infinite; 
 }
+
 
 .tools p {
   padding: 10px;
@@ -1262,11 +1289,15 @@ input:focus + .highlight {
   border-radius: 24px;
   margin: 0 10px;
   white-space: nowrap; 
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
 }
+
+
 
 @keyframes scrolltools {
   0% {
-    transform: translateX(-100%); 
+    transform: translateX(-200%); 
   }
   100% {
     transform: translateX(100%); 
@@ -1274,19 +1305,37 @@ input:focus + .highlight {
   }
 }
 
-.skills p:hover {
-  background-color: #3498db; 
+.tools p:hover {
+  background-color: #90cf32; 
   color: #fff; 
   border: none;
 }
 
-@media screen and (max-width: 600px) {
+
+
+@media (min-width: 1024px) {
   .tools-container {
-    margin:10px 20px;
+    margin: 10px 100px; 
   }
-  
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tools-container {
+    margin: 10px 50px;  
+  }
+}
+
+@media (max-width: 767px) {
+  .tools-container {
+    margin: 10px 20px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .tools-container {
+    margin: 10px 10px;  
+  }
+}
 
 
 
