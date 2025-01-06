@@ -1200,6 +1200,14 @@ input:focus + .highlight {
   margin:10px 120px;
   overflow: hidden;
 }
+@media screen and (max-width: 600px) {
+  .skills-container {
+    margin:10px 20px;
+  }
+  
+}
+
+
 
 .skills {
   display: flex;
@@ -1271,6 +1279,14 @@ input:focus + .highlight {
   color: #fff; 
   border: none;
 }
+
+@media screen and (max-width: 600px) {
+  .tools-container {
+    margin:10px 20px;
+  }
+  
+}
+
 
 
 
