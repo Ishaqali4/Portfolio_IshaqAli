@@ -6,7 +6,9 @@ body {
     
     overflow-x: hidden !important;
     box-sizing: border-box;
-    font-family: 'IBM Plex Mono', monospace !important; /* Correct font family */}
+    font-family: 'Helvetica', sans-serif;
+    /* font-family: 'IBM Plex Mono',  !important; */
+  }
 
     .header {
       position: fixed;
@@ -23,6 +25,15 @@ backdrop-filter: blur(30px);
       width: auto;
   }
   
+
+  @font-face {
+    font-family: 'Helvetica';
+    src: url('./helvetica-255-webfont/helvetica-compressed-5871d14b6903a.woff') format('woff2'),
+         url('./helvetica-255-webfont/Helvetica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   .header a {
       color: #888888;
       text-decoration: none;
