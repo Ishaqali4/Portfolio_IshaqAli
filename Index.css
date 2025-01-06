@@ -633,6 +633,32 @@ height: 440px;
 
 
 
+.KinView {
+  position: relative;
+  perspective: 1000px; /* Adds depth to the container */
+}
+
+.KinView .col-12 {
+  transition: transform 0.1s ease-out; /* Smooth transition */
+}
+
+.KinView .KinViewLogo, 
+.KinView .KinViewMock {
+  transition: transform 0.1s ease-out;
+}
+
+.KinView .KinViewMock video {
+  transition: transform 0.1s ease-out;
+  border-radius: 32px;
+  opacity: 0.7;
+  width: 220px;
+}
+
+/* Optional: Adding shadow for more depth */
+.KinView:hover .KinViewLogo, 
+.KinView:hover .KinViewMock {
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+}
 
 
 .KinView{
@@ -684,6 +710,33 @@ margin-left: 20px;
 
 
 
+.BikeRevive {
+  position: relative;
+  perspective: 1000px; /* Adds depth to the container */
+}
+
+.BikeRevive .col-12 {
+  transition: transform 0.1s ease-out; /* Smooth transition */
+}
+
+.BikeRevive .BikeReviveContent, 
+.BikeRevive .BikeManiaMock {
+  transition: transform 0.1s ease-out;
+}
+
+.BikeRevive .BikeManiaMock video {
+  transition: transform 0.1s ease-out;
+  border-radius: 32px;
+  opacity: 0.7;
+  width: 220px;
+}
+
+/* Optional: Adding shadow for more depth */
+.BikeRevive:hover .BikeReviveContent, 
+.BikeRevive:hover .BikeManiaMock {
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+}
+
 
 .BikeRevive {
   height: auto;
@@ -721,7 +774,11 @@ color: white;
 
 
 
-
+.KinViewMock  video {
+  width: 220px;
+    margin-top: 20px;
+  
+  }
 
 .BikeReviveLogoName p {
   color: white;
@@ -1136,15 +1193,85 @@ input:focus + .highlight {
 }
 
 
-
-
-
-
-.KinViewMock  video {
-width: 220px;
-  margin-top: 20px;
-
+.skills-set{
+  width: 100%;  
 }
+.skills-container {
+  margin:10px 120px;
+  overflow: hidden;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scrollSkills 25s linear infinite; 
+}
+
+.skills p {
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 24px;
+  margin: 0 10px;
+  white-space: nowrap; 
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+@keyframes scrollSkills {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+.skills p:hover {
+  background-color: #3498db;
+  color: #fff; 
+  border: none;
+}
+
+
+
+
+.tools-set{
+  width: 100%;  
+}
+.tools-container {
+  margin:10px 120px;
+  overflow: hidden; 
+}
+
+.tools {
+  display: flex;
+  flex-wrap: nowrap; 
+  animation: scrolltools 55s linear infinite; 
+}
+
+.tools p {
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 24px;
+  margin: 0 10px;
+  white-space: nowrap; 
+}
+
+@keyframes scrolltools {
+  0% {
+    transform: translateX(-100%); 
+  }
+  100% {
+    transform: translateX(100%); 
+    
+  }
+}
+
+.skills p:hover {
+  background-color: #3498db; 
+  color: #fff; 
+  border: none;
+}
+
 
 
 
@@ -1152,3 +1279,6 @@ body ::selection{
   background-color: #88ad35;
   color: white;
 }
+
+
+

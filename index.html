@@ -148,7 +148,11 @@
   
   
       </div>
+
+
+
   <br>
+
       <div class=" m-1 row  BikeRevive">
   
   
@@ -317,20 +321,95 @@
               I Enjoy Creating <span style="color: rgb(155, 155, 8);">User-Centric</span> and <span style="color: rgb(26, 176, 59);">Human Experience</span>
           </p>
         <br>
-          <h1 style=" margin-bottom: 8px; font-weight: 700;"><span >SKILLS</span></h1>
-        
-          <p style="margin-bottom: 12px;">Wireframing, Prototyping, User-Centered Design, Usability Testing</p>
-
-          <h1 style=" margin-bottom: 8px; font-weight: 700;"><span>TOOLS</span>
-          </h1>
-          <p style="margin-bottom: 12px;">Figma, Adobe XD, Protopie, Zeplin, Marvel, Miro, Maze</p>
-  
-          <h1 style="margin-bottom: 8px; font-weight: 700;"><span>WEB DEVELOPMENT</span></h1>
-          <p>HTML, CSS, Bootstrap, JavaScript</p>
       </div>
   </div>
   
-  
+
+  <h1 style="text-align: center; margin: 40px 10px; font-size: 3rem;">I can Help you with</h1> 
+
+  <!-- <div style="margin: 10px 80px; display: flex; flex-wrap: wrap; " class="skils">
+
+    <p style="padding: 10px; border: 1px solid #666; border-radius: 24px; margin: 0px 10px;" >Wireframing</p>
+    <p style="padding: 10px; border: 1px solid #666; border-radius: 24px; margin: 0px 10px;" >Prototyping</p>
+    <p style="padding: 10px; border: 1px solid #666; border-radius: 24px; margin: 0px 10px;" >User-Exerience Design</p>
+    <p style="padding: 10px; border: 1px solid #666; border-radius: 24px; margin: 0px 10px;" >Usability Testing</p>
+    <p style="padding: 10px; border: 1px solid #666; border-radius: 24px; margin: 0px 10px;" >Resposive Design</p>
+    <p style="padding: 10px; border: 1px solid #666; border-radius: 24px; margin: 0px 10px;" >UX</p>
+    <p style="padding: 10px; border: 1px solid #666; border-radius: 24px; margin: 0px 10px;" >Components</p>
+
+  </div> -->
+
+<div class="skills-set">
+
+  <div class="skills-container">
+    <div class="skills">
+      <p>Wireframing</p>
+      <p>User research</p>
+      <p>User-Experience Design</p>
+      <p>Usability Testing</p>
+      <p>Responsive Design</p>
+      <p>Components</p>
+      <p>Wireframing</p>
+      <p>Prototyping</p>
+      <p>User-Experience Design</p>
+      <p>Usability Testing</p>
+      <p>Responsive Design</p>
+      <p>Components</p>
+    </div>
+  </div>
+</div>
+
+<div class="tools-set">
+
+  <div class="tools-container">
+    <div class="tools">
+      <p>Figma</p>
+      <p>Adobe XD</p>
+      <p>Maze</p>
+      <p>Zeplin </p>
+      <p>HTML</p>
+      <p>CSS</p>
+      <p>JavaScript</p>
+      <p>Figma</p>
+      <p>Adobe XD</p>
+      <p>Maze</p>
+      <p>Zeplin </p>
+      <p>HTML</p>
+      <p>CSS</p>
+      <p>JavaScript</p>
+      <p>Figma</p>
+      <p>Adobe XD</p>
+      <p>Maze</p>
+      <p>Zeplin </p>
+      <p>HTML</p>
+      <p>CSS</p>
+      <p>JavaScript</p>
+
+
+    
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+  <br>
+  <!-- <div style="display: flex; flex-wrap: wrap; " class="skils">
+
+    <p style="padding: 10px; border: 1px solid #666; border-radius: 24px; margin: 0px 10px;" >Figma</p>
+    <p style="padding: 10px; border: 1px solid #666; border-radius: 24px; margin: 0px 10px;" >Adobe XD</p>
+    <p style="padding: 10px; border: 1px solid #666; border-radius: 24px; margin: 0px 10px;" >Webflow</p>
+    <p style="padding: 10px; border: 1px solid #666; border-radius: 24px; margin: 0px 10px;" >Miro</p>
+    <p style="padding: 10px; border: 1px solid #666; border-radius: 24px; margin: 0px 10px;" >Maze</p>
+    <p style="padding: 10px; border: 1px solid #666; border-radius: 24px; margin: 0px 10px;" >Marvel</p>
+    <p style="padding: 10px; border: 1px solid #666; border-radius: 24px; margin: 0px 10px;" >Protopie</p>
+    <p style="padding: 10px; border: 1px solid #666; border-radius: 24px; margin: 0px 10px;" >Zeplin</p>
+
+  </div> -->
+
   </section>
 </div>
 
@@ -537,6 +616,7 @@ video.addEventListener('ended', function() {
 
 
 <script>
+  
   function validateEmail() {
     var email = document.getElementById("email").value;
     var errorMessage = document.getElementById("error-message");
@@ -588,6 +668,42 @@ video.addEventListener('ended', function() {
   // Apply 3D rotation and scaling based on mouse movement
   this.style.transform = `rotateX(${deltaY * 10}deg) rotateY(${deltaX * 10}deg)`;
 });
+
+
+document.querySelector('.KinView').addEventListener('mousemove', function (e) {
+  const width = this.offsetWidth;
+  const height = this.offsetHeight;
+  
+  const mouseX = e.pageX - this.offsetLeft;
+  const mouseY = e.pageY - this.offsetTop;
+
+  const centerX = width / 2;
+  const centerY = height / 2;
+  
+  const deltaX = (mouseX - centerX) / centerX;
+  const deltaY = (mouseY - centerY) / centerY;
+
+  // Apply 3D rotation based on mouse movement for the container
+  this.style.transform = `rotateX(${deltaY * 10}deg) rotateY(${deltaX * 10}deg)`;
+});
+
+document.querySelector('.BikeRevive').addEventListener('mousemove', function (e) {
+  const width = this.offsetWidth;
+  const height = this.offsetHeight;
+  
+  const mouseX = e.pageX - this.offsetLeft;
+  const mouseY = e.pageY - this.offsetTop;
+
+  const centerX = width / 2;
+  const centerY = height / 2;
+  
+  const deltaX = (mouseX - centerX) / centerX;
+  const deltaY = (mouseY - centerY) / centerY;
+
+  // Apply 3D rotation based on mouse movement for the container
+  this.style.transform = `rotateX(${deltaY * 10}deg) rotateY(${deltaX * 10}deg)`;
+});
+
 
 </script>
 
