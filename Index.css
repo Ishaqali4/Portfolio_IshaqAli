@@ -886,14 +886,14 @@ background-image: url(./assets/image\ 63.png);
 
 
 
-/* 
+
  .selfimg img {
     width: 480px;
     height: auto;
     object-fit: cover;
     border-radius: 30px;
  }
- */
+
 
  
 
@@ -1290,7 +1290,7 @@ input:focus + .highlight {
 .tools {
   display: flex;
   flex-wrap: nowrap; 
-  animation: scrolltools 99s linear infinite; 
+  animation: scrolltools 110s linear infinite; 
 }
 
 
