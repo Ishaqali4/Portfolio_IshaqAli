@@ -6,8 +6,7 @@ body {
     
     overflow-x: hidden !important;
     box-sizing: border-box;
-    /* font-family: 'Helvetica', sans-serif; */
-    /* font-family: 'IBM Plex Mono',  !important; */
+font-family: Helvetica, sans-serif !important;
   }
 
     .header {
@@ -26,13 +25,6 @@ backdrop-filter: blur(30px);
   }
   
 
-  @font-face {
-    font-family: 'Helvetica';
-    src: url('./helvetica-255-webfont/helvetica-compressed-5871d14b6903a.woff') format('woff2'),
-         url('./helvetica-255-webfont/Helvetica.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
 
   .header a {
       color: #888888;
