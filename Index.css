@@ -1351,3 +1351,21 @@ body ::selection{
 
 
 
+
+/* The custom cursor */
+.cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #3498db;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+/* Example hover effect for any element */
+.content:hover .cursor {
+  background-color: #e74c3c;
+  transform: translate(-50%, -50%) scale(1.5);
+}
